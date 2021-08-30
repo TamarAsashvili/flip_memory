@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+
+    <title>Memory cards</title>
+  </head>
+  <body>
+    <button id="clear" class="clear btn">
+      <i class="fas fa-trash"></i>Clear Cards
+    </button>
+
+    <h1>
+      Memory Cards
+      <button id="show" class="btn btn-small">
+        <i class="fas fa-plus"></i>Add new Cards
+      </button>
+    </h1>
+
+    <div id="cards-container" class="cards">
+      <!-- <div class="card active">
+        <div class="inner-card">
+          <div class="inner-card-front">
+            <p>what is PhP?</p>
+          </div>
+          <div class="inner-card-back">
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="inner-card">
+          <div class="inner-card-front">
+            <p>what is React?</p>
+          </div>
+          <div class="inner-card-beck">
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>-->
+    </div>
+
+    <div class="navigation">
+      <button id="prev" class="nav-button">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <p id="current"></p>
+      <button id="next" class="nav-button">
+        <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+
+    <div id="add-container" class="add-container">
+      <h1>
+        add new cards
+        <button id="hide" class="btn btn-small btn-ghost">
+          <i class="fas fa-times"></i>
+        </button>
+      </h1>
+      <div class="form-group">
+        <label for="question">question</label>
+        <textarea id="question" placeholder="Enter Question..."></textarea>
+      </div>
+      <div class="form-group">
+        <label for="answer">Answer</label>
+        <textarea id="answer" placeholder="Enter Answer ..."></textarea>
+      </div>
+      <div class="form-group">
+        <label for="image">Image answer</label>
+        <textarea
+          id="image"
+          placeholder="Enter image link if you wish 200 x 200..."
+        ></textarea>
+      </div>
+      <button id="add-card" class="btn">
+        <i class="fas fa-plus"></i>add Card
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
